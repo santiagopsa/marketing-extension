@@ -11,6 +11,17 @@ type VideoHeroProps = {
 export default function VideoHero({ locale = "en" }: VideoHeroProps) {
   const isEs = locale === "es";
   const root = useRef<HTMLDivElement>(null);
+  const joinHref = isEs ? "/es#join" : "/#join";
+
+  const scrollToJoin = () => {
+    if (typeof window === "undefined") return;
+    const joinSection = document.getElementById("join");
+    if (joinSection) {
+      joinSection.scrollIntoView({ behavior: "smooth", block: "start" });
+      return;
+    }
+    window.location.href = joinHref;
+  };
 
   useEffect(() => {
     const { gsap } = ensureGsap();
@@ -100,7 +111,11 @@ export default function VideoHero({ locale = "en" }: VideoHeroProps) {
 
             <div className="mt-8 flex flex-wrap gap-3">
               <a
-                href="#join"
+                href={joinHref}
+                onClick={(event) => {
+                  event.preventDefault();
+                  scrollToJoin();
+                }}
                 className="rounded-xl bg-firo-blue px-5 py-3 text-sm font-semibold shadow-soft hover:opacity-95"
               >
                 {isEs ? "Empieza tu prueba sin costo" : "Start your free trial"}
