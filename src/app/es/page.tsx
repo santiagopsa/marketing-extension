@@ -9,16 +9,16 @@ import Join from "@/components/sections/Join";
 import { DEFAULT_OG_IMAGE, SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "PeakU | Guía para reclutadores que necesitan respaldo interno",
+  title: "PeakU | Extensión para encontrar y contactar candidatos en LinkedIn",
   description:
-    "PeakU te ayuda a presentar candidatos con evidencia estructurada y criterios compartidos. Recibe la guía directamente por WhatsApp.",
+    "Prueba sin costo la extensión de PeakU. Busca candidatos relevantes en LinkedIn según requisitos de vacante, compara ajuste y genera mensajes automáticos.",
   keywords: [
-    "guía para reclutadores",
-    "herramientas para reclutadores",
-    "respaldo interno en reclutamiento",
-    "evidencia estructurada selección",
-    "defender candidatos",
-    "reducir reprocesos de selección",
+    "extensión de reclutamiento linkedin",
+    "buscar candidatos linkedin",
+    "automatización de sourcing",
+    "contactar candidatos por linkedin",
+    "prospección de talento",
+    "peaku extension",
   ],
   alternates: {
     canonical: `${SITE_URL}/es`,
@@ -30,24 +30,24 @@ export const metadata: Metadata = {
   },
   openGraph: {
     locale: "es_ES",
-    title: "PeakU | Reclutamiento con evidencia y confianza interna",
+    title: "PeakU | Extensión para encontrar y contactar candidatos en LinkedIn",
     description:
-      "Guía práctica para reclutadores: presenta candidatos con claridad, evidencia y menos discusiones subjetivas.",
+      "Configura tu vacante, encuentra candidatos relevantes y envía mensajes personalizados con la extensión de PeakU.",
     url: `${SITE_URL}/es`,
     images: [
       {
         url: DEFAULT_OG_IMAGE,
         width: 1200,
         height: 800,
-        alt: "Dashboard de PeakU para respaldar decisiones de selección",
+        alt: "Panel de la extensión de PeakU para LinkedIn",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "PeakU | Guía para reclutadores con evidencia y claridad",
+    title: "PeakU | Prueba sin costo la extensión de PeakU",
     description:
-      "Recibe la guía de reclutamiento por WhatsApp y mejora cómo presentas candidatos.",
+      "Busca candidatos en LinkedIn, prioriza por ajuste y empieza conversaciones con mensajes automáticos.",
     images: [DEFAULT_OG_IMAGE],
   },
 };

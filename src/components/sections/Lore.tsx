@@ -42,101 +42,96 @@ export default function Lore({ locale = "en" }: LoreProps) {
           {isEs ? (
             <>
               <div data-reveal className="text-sm font-semibold uppercase tracking-wide text-firo-blue">
-                QUÉ APRENDERÁS
+                CÓMO FUNCIONA
               </div>
               <h2 data-reveal className="mt-3 text-3xl font-semibold tracking-tight md:text-4xl">
-                Dentro de esta guía encontrarás un sistema práctico para:
+                La extensión ejecuta tu búsqueda de candidatos en cuatro pasos:
               </h2>
 
               <ul data-reveal className="mt-8 space-y-3 text-firo-muted">
                 <li className="flex items-start gap-2">
                   <span className="mt-0.5 text-firo-blue">✓</span>
-                  <span>Obtener la información real que necesitan los tomadores de decisión.</span>
+                  <span>Cargas la información de la vacante: requisitos, experiencia y contexto del rol.</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="mt-0.5 text-firo-blue">✓</span>
-                  <span>Definir el éxito del rol antes de empezar a buscar.</span>
+                  <span>Seleccionas en la extensión la vacante que quieres correr.</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="mt-0.5 text-firo-blue">✓</span>
-                  <span>Diseñar entrevistas que generen evidencia (no opiniones).</span>
+                  <span>PeakU recorre LinkedIn y detecta los perfiles más relevantes.</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="mt-0.5 text-firo-blue">✓</span>
-                  <span>Presentar candidatos de forma que reduzca la incertidumbre.</span>
+                  <span>Compara cada candidato contra tus condiciones y calcula nivel de ajuste.</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="mt-0.5 text-firo-blue">✓</span>
-                  <span>Responder profesionalmente al “no me convenció”.</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="mt-0.5 text-firo-blue">✓</span>
-                  <span>Convertirte en un asesor, no solo en quien coordina el proceso.</span>
+                  <span>Redacta mensajes personalizados para iniciar la conversación automáticamente.</span>
                 </li>
               </ul>
 
               <div data-reveal className="mt-10 rounded-2xl border border-firo-line bg-white p-6">
                 <h3 className="text-xl font-semibold tracking-tight">
-                  No es teoría. Es una guía de trabajo.
+                  Diseñada para prospección en LinkedIn
                 </h3>
                 <p className="mt-4 text-firo-muted">Incluye:</p>
                 <ul className="mt-3 space-y-2 text-firo-muted">
                   <li className="flex items-start gap-2">
                     <span className="mt-0.5 text-firo-blue">✓</span>
-                    <span>Plantilla de kickoff lista para usar.</span>
+                    <span>Búsqueda basada en requisitos reales de la vacante.</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="mt-0.5 text-firo-blue">✓</span>
-                    <span>Estructura de entrevista paso a paso.</span>
+                    <span>Ranking por relevancia para priorizar el contacto inicial.</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="mt-0.5 text-firo-blue">✓</span>
-                    <span>Modelo de informe para presentar finalistas.</span>
+                    <span>Mensajes automáticos que puedes revisar y enviar.</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="mt-0.5 text-firo-blue">✓</span>
-                    <span>Checklist operativo para cada proceso.</span>
+                    <span>Flujo rápido para lanzar nuevas vacantes sin fricción.</span>
                   </li>
                 </ul>
               </div>
 
               <div data-reveal className="mt-10 rounded-2xl border border-firo-line bg-white p-6">
                 <div className="text-sm font-semibold uppercase tracking-wide text-firo-blue">
-                  AUTORIDAD
+                  RESULTADO
                 </div>
                 <h3 className="mt-3 text-2xl font-semibold tracking-tight">
-                  Construida desde experiencia real en procesos de contratación complejos
+                  Menos tiempo buscando, más tiempo hablando con talento relevante
                 </h3>
                 <p className="mt-4 text-firo-muted">
-                  Esta guía está basada en aprendizajes acumulados a lo largo de miles de procesos
-                  de selección en empresas pequeñas, medianas, grandes y organizaciones Fortune 500.
+                  En lugar de revisar perfiles manualmente uno por uno, la extensión acelera la primera
+                  etapa de prospección y te entrega candidatos priorizados por ajuste.
                 </p>
                 <p className="mt-3 text-firo-muted">
-                  Con más de 5.000 contrataciones exitosas y más de 10 años desarrollando procesos
-                  efectivos, documentamos lo que sí funciona cuando las decisiones son difíciles y el
-                  tiempo importa.
+                  Así puedes abrir conversaciones antes, cubrir vacantes más rápido y mantener un flujo
+                  constante de candidatos alineados con la necesidad del rol.
                 </p>
                 <p className="mt-3 text-firo-muted">
-                  No es un enfoque académico. Es una guía práctica construida desde la operación real.
+                  Todo desde LinkedIn, con tu proceso actual, y sin costo para empezar a probar.
                 </p>
               </div>
             </>
           ) : (
             <>
               <h2 data-reveal className="text-3xl font-semibold tracking-tight md:text-4xl">
-                The recruiter’s invisible work
+                How the PeakU extension works
               </h2>
               <p data-reveal className="mt-4 text-firo-muted">
-                You review hundreds of profiles, run structured interviews, and build strong recommendations.
+                You upload job details and requirements, select the opening in the extension, and let PeakU do the heavy lifting in LinkedIn.
               </p>
               <p data-reveal className="mt-3 text-firo-muted">
-                And too often everything ends with one sentence: "I am not convinced."
+                It finds relevant profiles, measures fit against your criteria, and drafts personalized first messages.
               </p>
 
               <div className="mt-10 grid gap-4 md:grid-cols-3">
-                <Card desc="You filter hundreds of profiles to separate signal from noise." />
-                <Card desc="You structure interviews, evaluate skills, and compare evidence." />
-                <Card desc="Without shared context, your recommendations are exposed to subjective calls." />
+                <Card desc="Run searches from real role requirements, not generic filters." />
+                <Card desc="Prioritize candidates with an objective fit comparison." />
+                <Card desc="Start outreach faster with auto-generated opening messages." />
               </div>
             </>
           )}

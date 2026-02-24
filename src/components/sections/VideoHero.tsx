@@ -83,19 +83,19 @@ export default function VideoHero({ locale = "en" }: VideoHeroProps) {
             </div>
             <div className="inline-flex items-center gap-2 rounded-full bg-white/80 px-4 py-2 text-sm text-firo-muted border border-firo-line">
               <span className="h-2 w-2 rounded-full bg-firo-blue" />
-              {isEs ? "PeakU para reclutadores" : "PeakU for recruiters"}
+              {isEs ? "Extensión de PeakU para LinkedIn" : "PeakU extension for LinkedIn"}
             </div>
 
             <h1 className="mt-6 text-4xl font-semibold tracking-tight md:text-6xl">
               {isEs
-                ? "Si alguna vez escuchaste \"sigamos viendo más perfiles\", esta guía es para ti."
-                : "The problem is not finding strong candidates, it is getting support for your judgment."}
+                ? "Activa tu vacante y empieza a contactar talento relevante en LinkedIn, sin trabajo manual."
+                : "Launch your opening and start contacting relevant LinkedIn talent without manual busywork."}
             </h1>
 
             <p className="mt-5 max-w-xl text-base leading-relaxed text-firo-muted md:text-lg">
               {isEs
-                ? "Aprende cómo alinear criterios, estructurar entrevistas y presentar candidatos para que las decisiones avancen con más claridad."
-                : "If your recruiting work gets dismissed when a hiring leader rejects candidates without context, this page is for you."}
+                ? "Carga requisitos y contexto de la vacante, selecciónala en la extensión y deja que PeakU encuentre perfiles, priorice por ajuste y redacte el primer mensaje."
+                : "Add role requirements and context, select the opening in the extension, and let PeakU find profiles, rank fit, and draft your first outreach message."}
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
@@ -103,14 +103,14 @@ export default function VideoHero({ locale = "en" }: VideoHeroProps) {
                 href="#join"
                 className="rounded-xl bg-firo-blue px-5 py-3 text-sm font-semibold shadow-soft hover:opacity-95"
               >
-                {isEs ? "Recíbela por WhatsApp" : "Download free guide"}
+                {isEs ? "Empieza tu prueba sin costo" : "Start your free trial"}
               </a>
             </div>
 
             <p className="mt-3 text-xs text-firo-muted">
               {isEs
-                ? "Una herramienta práctica para respaldar tus decisiones de selección."
-                : "A practical tool to support your hiring decisions."}
+                ? "Configúralo en minutos y acelera la prospección con candidatos de mejor ajuste."
+                : "Get set up in minutes and speed up sourcing with better-fit candidates."}
             </p>
           </div>
         </div>

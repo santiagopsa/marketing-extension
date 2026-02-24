@@ -9,16 +9,16 @@ import Join from "@/components/sections/Join";
 import { DEFAULT_OG_IMAGE, SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "PeakU | Recruiter guide to defend candidates with evidence",
+  title: "PeakU | LinkedIn extension for candidate sourcing and outreach",
   description:
-    "PeakU helps recruiters present candidates with structured evidence and shared criteria. Get the guide via WhatsApp and reduce hiring rework.",
+    "Try the PeakU extension for free. Find relevant LinkedIn candidates from your role requirements, compare fit, and start outreach with auto-drafted messages.",
   keywords: [
-    "recruiter guide",
-    "recruiter tools",
-    "hiring evidence framework",
-    "candidate recommendation support",
-    "reduce hiring rework",
-    "hiring manager alignment",
+    "linkedin recruiting extension",
+    "candidate sourcing automation",
+    "linkedin outreach automation",
+    "recruiting workflow automation",
+    "talent sourcing tool",
+    "peaku extension",
   ],
   alternates: {
     canonical: `${SITE_URL}/`,
@@ -30,24 +30,24 @@ export const metadata: Metadata = {
   },
   openGraph: {
     locale: "en_US",
-    title: "PeakU | Recruiter guide to defend candidates with evidence",
+    title: "PeakU | LinkedIn extension for candidate sourcing and outreach",
     description:
-      "Practical guide for recruiters to present candidates with clarity, evidence, and shared criteria.",
+      "Upload role requirements, run LinkedIn searches, rank candidate fit, and start conversations faster.",
     url: `${SITE_URL}/`,
     images: [
       {
         url: DEFAULT_OG_IMAGE,
         width: 1200,
         height: 800,
-        alt: "PeakU dashboard for recruiter decision support",
+        alt: "PeakU extension dashboard for LinkedIn recruiting",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "PeakU | Recruiter guide to defend candidates with evidence",
+    title: "PeakU | Try the extension for free",
     description:
-      "Get the practical recruiter guide and receive it via WhatsApp.",
+      "Automate candidate discovery and first outreach directly from LinkedIn.",
     images: [DEFAULT_OG_IMAGE],
   },
 };

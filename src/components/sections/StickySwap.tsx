@@ -5,16 +5,16 @@ import Container from "../ui/Container";
 import { ensureGsap } from "@/lib/gsap";
 
 const cards = [
-  { title: "Evidence-backed decisions", desc: "Each recommendation is presented with clear criteria and objective signals." },
-  { title: "Fewer repeated hiring processes", desc: "Shared structure reduces resets, delays, and unnecessary back-and-forth." },
-  { title: "Higher hiring leader trust", desc: "Leaders understand why a candidate fits, before relying on gut feeling." },
-  { title: "Your work becomes visible", desc: "The depth of your recruiting process is no longer hidden behind opinions." },
+  { title: "Role-based search", desc: "Candidates are discovered from your vacancy requirements, not from manual trial and error." },
+  { title: "Fit-first prioritization", desc: "Profiles are ranked by how closely they match required skills and context." },
+  { title: "Faster first contact", desc: "The extension drafts personalized outreach messages to start conversations sooner." },
+  { title: "Less repetitive work", desc: "Reduce manual profile scanning and spend time with high-potential candidates." },
 ];
 const cardsEs = [
-  { title: "Decisiones respaldadas con evidencia", desc: "Cada recomendación se presenta con criterios claros y señales objetivas." },
-  { title: "Menos reprocesos de selección", desc: "Una estructura compartida evita reinicios, demoras y discusiones circulares." },
-  { title: "Mayor confianza del líder contratante", desc: "El líder entiende por qué el candidato encaja antes de decidir por intuición." },
-  { title: "Tu trabajo se vuelve visible", desc: "El valor de tu proceso deja de perderse en opiniones aisladas." },
+  { title: "Búsqueda guiada por vacante", desc: "Los candidatos se encuentran con base en requisitos reales, no con filtros genéricos." },
+  { title: "Priorización por ajuste", desc: "Cada perfil se ordena según qué tanto cumple condiciones clave del rol." },
+  { title: "Primer contacto más rápido", desc: "La extensión redacta mensajes personalizados para iniciar conversaciones antes." },
+  { title: "Menos trabajo repetitivo", desc: "Disminuye el tiempo de revisión manual y enfócate en talento con mayor potencial." },
 ];
 
 type StickySwapProps = {
@@ -59,12 +59,12 @@ export default function StickySwap({ locale = "en" }: StickySwapProps) {
         <div className="grid gap-10 md:grid-cols-2">
           <div className="md:sticky md:top-24 md:h-fit">
             <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
-              {isEs ? "Lo que cambia cuando hay evidencia compartida" : "What changes when evidence is shared"}
+              {isEs ? "Lo que cambia cuando usas la extensión de PeakU" : "What changes when you use the PeakU extension"}
             </h2>
             <p className="mt-4 max-w-lg text-firo-muted">
               {isEs
-                ? "No se trata de convencer con más opinión. Se trata de mostrar mejor el trabajo que ya haces."
-                : "It is not about arguing harder. It is about making your process visible and credible."}
+                ? "El objetivo es claro: llenar tu pipeline más rápido con candidatos relevantes y listos para conversar."
+                : "The goal is clear: fill your pipeline faster with relevant candidates ready to engage."}
             </p>
           </div>
 

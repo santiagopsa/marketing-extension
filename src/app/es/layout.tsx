@@ -3,18 +3,18 @@ import { DEFAULT_OG_IMAGE, SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "PeakU | Guía para reclutadores que necesitan respaldo interno",
+  title: "PeakU | Extensión para encontrar y contactar candidatos en LinkedIn",
   description:
-    "PeakU ayuda a reclutadores a defender candidatos con evidencia estructurada, reportes claros y criterios que líderes y equipos sí entienden.",
+    "Prueba sin costo la extensión de PeakU para LinkedIn. Busca candidatos relevantes según requisitos de vacante y empieza conversaciones con mensajes automáticos.",
   keywords: [
     "PeakU",
-    "guía para reclutadores",
-    "herramientas para reclutadores",
-    "respaldo interno",
-    "evidencia estructurada",
-    "defender candidatos",
-    "reducir reprocesos de selección",
-    "reclutamiento con datos",
+    "extensión de reclutamiento linkedin",
+    "buscar candidatos linkedin",
+    "automatización de sourcing",
+    "contactar candidatos por linkedin",
+    "prospección de talento",
+    "herramienta para reclutamiento",
+    "prueba sin costo",
   ],
   alternates: {
     canonical: `${SITE_URL}/es`,
@@ -28,23 +28,23 @@ export const metadata: Metadata = {
     locale: "es_ES",
     url: `${SITE_URL}/es`,
     siteName: "PeakU",
-    title: "PeakU | Guía para reclutadores con evidencia y claridad",
+    title: "PeakU | Extensión para encontrar y contactar candidatos en LinkedIn",
     description:
-      "Descarga la guía de PeakU y presenta candidatos con criterios claros, evidencia y menos discusiones subjetivas.",
+      "Configura tu vacante, prioriza candidatos por ajuste y empieza el contacto en LinkedIn con la extensión de PeakU.",
     images: [
       {
         url: DEFAULT_OG_IMAGE,
         width: 1200,
         height: 800,
-        alt: "Dashboard de PeakU para reportes de reclutamiento",
+        alt: "Panel de la extensión de PeakU para reclutamiento en LinkedIn",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "PeakU | Guía para reclutadores con evidencia y claridad",
+    title: "PeakU | Prueba sin costo la extensión de PeakU",
     description:
-      "Recibe una guía práctica para respaldar tus recomendaciones y reducir reprocesos de selección.",
+      "Busca candidatos relevantes en LinkedIn y envía mensajes personalizados más rápido.",
     images: [DEFAULT_OG_IMAGE],
   },
 };

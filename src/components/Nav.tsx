@@ -39,7 +39,7 @@ export default function Nav({ locale = "en" }: NavProps) {
         </a>
 
         <nav className="hidden items-center gap-7 text-sm text-firo-muted md:flex">
-          <a href={guideHref} className="hover:text-firo-text">{isEs ? "Guía" : "Guide"}</a>
+          <a href={guideHref} className="hover:text-firo-text">{isEs ? "Activa tu prueba" : "Activate trial"}</a>
         </nav>
 
         <div className="flex items-center gap-2">
@@ -53,7 +53,7 @@ export default function Nav({ locale = "en" }: NavProps) {
             href={guideHref}
             className="rounded-xl bg-white/10 px-3 py-2 text-sm font-semibold hover:bg-white/15 md:px-4"
           >
-            {isEs ? "Descarga guía" : "Download guide"}
+            {isEs ? "Probar ahora" : "Try now"}
           </a>
         </div>
       </div>

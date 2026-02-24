@@ -7,53 +7,53 @@ import { ensureGsap } from "@/lib/gsap";
 const levels = [
   {
     level: "Step 1",
-    title: "Signal",
-    earns: "You do the hard diagnostic work",
-    does: "Screening, interviews, and structured notes",
+    title: "Job Setup",
+    earns: "Add vacancy requirements and role context",
+    does: "Skills, seniority, must-haves, and priorities",
   },
   {
     level: "Step 2",
-    title: "Recommendation",
-    earns: "You present a candidate with clear rationale",
-    does: "Technical and behavioral evidence, not opinions",
+    title: "Run Search",
+    earns: "Select the vacancy in the extension",
+    does: "PeakU starts scanning LinkedIn profiles",
   },
   {
     level: "Step 3",
-    title: "Rejection",
-    earns: "Feedback arrives without structure",
-    does: "\"Not convinced\" with no shared criteria",
+    title: "Candidate Match",
+    earns: "Relevant candidates are matched to your criteria",
+    does: "Each profile gets a clear fit comparison",
   },
   {
     level: "Step 4",
-    title: "Reprocess",
-    earns: "The process starts again and trust drops",
-    does: "Time lost for recruiter, leader, and candidate",
+    title: "Automated Outreach",
+    earns: "Extension drafts personalized first messages",
+    does: "You review, send, and start conversations faster",
   },
 ];
 const levelsEs = [
   {
     level: "Paso 1",
-    title: "Señal",
-    earns: "Haces el trabajo de diagnóstico más complejo",
-    does: "Filtro, entrevistas y notas estructuradas",
+    title: "Configura la vacante",
+    earns: "Carga requisitos y contexto del rol",
+    does: "Habilidades, seniority, requisitos obligatorios y prioridades",
   },
   {
     level: "Paso 2",
-    title: "Recomendación",
-    earns: "Presentas candidatos con criterio claro",
-    does: "Evidencia técnica y humana, no opiniones sueltas",
+    title: "Ejecuta la búsqueda",
+    earns: "Selecciona la vacante en la extensión",
+    does: "PeakU empieza a analizar perfiles en LinkedIn",
   },
   {
     level: "Paso 3",
-    title: "Rechazo",
-    earns: "La decisión llega sin estructura",
-    does: "\"No me convenció\" sin criterios compartidos",
+    title: "Prioriza candidatos",
+    earns: "Los perfiles se comparan con tus condiciones",
+    does: "Cada candidato muestra su nivel de ajuste",
   },
   {
     level: "Paso 4",
-    title: "Reproceso",
-    earns: "Se reinicia la selección y cae la confianza",
-    does: "Se pierde tiempo para reclutador, líder y candidato",
+    title: "Inicia contacto",
+    earns: "La extensión redacta mensajes personalizados",
+    does: "Revisas, envías y comienzas conversaciones más rápido",
   },
 ];
 
@@ -96,17 +96,17 @@ export default function Levels({ locale = "en" }: LevelsProps) {
           <div className="md:sticky md:top-28">
             <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
               {isEs
-                ? "El mayor cambio ocurre cuando dejas de perseguir aprobaciones."
-                : "This is not a talent problem. It is a trust problem."}
+                ? "Un flujo completo para pasar de vacante a conversación en minutos."
+                : "A complete flow from job setup to first outreach in minutes."}
             </h2>
             <p className="mt-4 text-firo-muted">
               {isEs
-                ? "El reclutamiento cambia cuando pasas de enviar perfiles a ayudar a otros a decidir con confianza."
-                : "Teams rarely question the process itself. They question the recruiter’s judgment. PeakU adds structured evidence to make hiring decisions defensible."}
+                ? "PeakU te ayuda a automatizar la búsqueda inicial y a priorizar candidatos con mejor ajuste para cada vacante."
+                : "PeakU helps automate early sourcing and prioritize better-fit candidates for each opening."}
             </p>
             {isEs ? (
               <p className="mt-3 text-firo-muted">
-                Ese es el momento donde tu rol deja de ser operativo. Y empieza a ser estratégico.
+                Así reduces trabajo manual y avanzas más rápido en procesos de contratación.
               </p>
             ) : null}
           </div>
