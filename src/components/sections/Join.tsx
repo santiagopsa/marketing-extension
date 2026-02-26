@@ -1,4 +1,12 @@
+"use client";
+
 import Container from "../ui/Container";
+
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void;
+  }
+}
 
 type JoinProps = {
   locale?: "en" | "es";
@@ -6,6 +14,26 @@ type JoinProps = {
 
 export default function Join({ locale = "en" }: JoinProps) {
   const isEs = locale === "es";
+  const adsConversionLabel = process.env.NEXT_PUBLIC_GOOGLE_ADS_CONVERSION_LABEL;
+
+  const handleSubmit = () => {
+    if (typeof window === "undefined") return;
+    const gtag = window.gtag;
+    if (typeof gtag !== "function") return;
+
+    gtag("event", "generate_lead", {
+      event_category: "engagement",
+      event_label: "join_form_submit",
+      value: 1,
+    });
+
+    if (adsConversionLabel) {
+      gtag("event", "conversion", {
+        send_to: `AW-837109052/${adsConversionLabel}`,
+      });
+    }
+  };
+
   return (
     <section id="join" className="bg-firo-bg py-24">
       <Container>
@@ -29,6 +57,7 @@ export default function Join({ locale = "en" }: JoinProps) {
                 action="https://formsubmit.co/luisa@peaku.co"
                 method="POST"
                 className="space-y-4"
+                onSubmit={handleSubmit}
               >
                 <input type="hidden" name="_subject" value="PeakU Prueba sin costo extensión LinkedIn" />
                 <input type="hidden" name="_captcha" value="false" />
